@@ -32,16 +32,24 @@ myForm.addEventListener("submit", (evt) => {
 	}
 	if (isTrue) {
 		successMessage.classList.remove("hidden");
-		mainContainer.style.display = "none";
-		emailText.textContent = email.value.trim();
+		submitBtn.classList.add("active");
+		setTimeout(() => {
+			mainContainer.style.display = "none";
+			emailText.textContent = email.value.trim();
+		}, 1000);
 	} else {
 		successMessage.classList.add("hidden");
 		mainContainer.style.display = "grid";
+		submitBtn.classList.remove("active");
 	}
 });
 
 cancelBtn.addEventListener("click", () => {
-	successMessage.classList.add("hidden");
-	mainContainer.style.display = "grid";
-	email.value = "";
+	setTimeout(() => {
+		successMessage.classList.add("hidden");
+		mainContainer.style.display = "grid";
+		email.value = "";
+		cancelBtn.classList.add("active");
+		submitBtn.classList.remove("active");
+	}, 1000);
 });

@@ -157,11 +157,14 @@ button:focus-visible {
 	background-color: var(--PRI-RED);
 	box-shadow: 0 6px 10px var(--PRI-RED);
 }
-
+.active {
+	background-color: var(--PRI-RED);
+	box-shadow: 0 6px 10px var(--PRI-RED);
+}
 /*|| MEDIA QUERY */
 @media screen and (min-width: 327px) and (max-width: 767px) {
-	body{
-		min-height: 150vh
+	body {
+		min-height: 100vh;
 	}
 	.hidden-pic-container img:first-child {
 		display: block;
@@ -193,7 +196,6 @@ button:focus-visible {
 		padding: 1.2rem;
 	}
 	.sign_up_message_container {
-		margin-top: 1rem;
 		width: 100%;
 		min-height: 90vh;
 		justify-content: space-between;
