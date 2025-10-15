@@ -160,6 +160,9 @@ button:focus-visible {
 
 /*|| MEDIA QUERY */
 @media screen and (min-width: 327px) and (max-width: 767px) {
+	body{
+		min-height: 150vh
+	}
 	.hidden-pic-container img:first-child {
 		display: block;
 	}
@@ -191,13 +194,13 @@ button:focus-visible {
 	}
 	.sign_up_message_container {
 		margin-top: 1rem;
-		width: 30%;
-		min-height: 100vh;
+		width: 100%;
+		min-height: 90vh;
 		justify-content: space-between;
 		padding-block-start: 7rem;
 	}
 	.sign_up_title {
-		margin-top: 2rem;
+		margin-top: 1.8rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
