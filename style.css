@@ -164,7 +164,7 @@ button:focus-visible {
 /*|| MEDIA QUERY */
 @media screen and (min-width: 327px) and (max-width: 767px) {
 	body {
-		min-height: 100vh;
+		min-height: 120vh;
 	}
 	.hidden-pic-container img:first-child {
 		display: block;
