@@ -37,6 +37,7 @@ myForm.addEventListener("submit", (evt) => {
 			mainContainer.style.display = "none";
 			emailText.textContent = email.value.trim();
 		}, 1000);
+		cancelBtn.classList.remove("active");
 	} else {
 		successMessage.classList.add("hidden");
 		mainContainer.style.display = "grid";
