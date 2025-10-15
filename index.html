@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<script
+			src="main.js"
+			defer></script>
+
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main
+			class="sign_up_form_container"
+			id="container">
+			<div class="image_container hidden-pic-container">
+				<img
+					src="./assets/images/illustration-sign-up-mobile.svg"
+					alt="illustration-sign-up-mobile" />
+				<img
+					src="./assets/images/illustration-sign-up-tablet.svg"
+					alt="illustration-sign-up-tablet" />
+			</div>
+			<div
+				class="content_container grid-flow"
+				data-spacing="large">
+				<h1 class="content_title">Stay updated!</h1>
+				<div class="grid-flow grid-gap">
+					<p class="content_desc">
+						Join 60,000+ product managers receiving monthly updates
+						on:
+					</p>
+					<div class="content_list_desc grid-flow">
+						<div class="flex-group">
+							<img
+								src="./assets/images/icon-list.svg"
+								alt="icon" />
+							<p class="content_desc">
+								Product discovery and building what matters
+							</p>
+						</div>
+						<div class="flex-group">
+							<img
+								src="./assets/images/icon-list.svg"
+								alt="icon" />
+							<p class="content_desc">
+								Measuring to ensure updates are a success
+							</p>
+						</div>
+						<div class="flex-group">
+							<img
+								src="./assets/images/icon-list.svg"
+								alt="icon" />
+							<p class="content_desc">And much more!</p>
+						</div>
+					</div>
+				</div>
+
+				<form
+					action=""
+					class="email_form grid-flow"
+					id="myForm"
+					novalidate>
+					<div class="email_container">
+						<div class="email_content">
+							<label
+								for="email"
+								class="emailLabel"
+								>Email address</label
+							>
+							<label class="error hidden"
+								>Valid email required</label
+							>
+						</div>
+						<input
+							type="email"
+							class="email"
+							name="email"
+							placeholder="email@company.com" />
+					</div>
+					<button
+						type="submit"
+						class="submit">
+						Subscribe to monthly newsletter
+					</button>
+				</form>
+			</div>
+
+			<div class="image_container hidden-pic">
+				<img
+					src="./assets/images/illustration-sign-up-desktop.svg"
+					alt="illustration-sign-up-desktop" />
+			</div>
+		</main>
+		<aside
+			class="sign_up_message_container hidden"
+			data-spacing="large">
+			<div class="succes-container">
+				<img
+					src="./assets/images/icon-success.svg"
+					alt="icon-success" />
+				<div class="sign_up_message">
+					<h1 class="sign_up_title">Thanks for subscribing!</h1>
+
+					<p class="sign_up_desc">
+						A confirmation email has been sent to
+						<span class="emailText">ash@loremcompany.com.</span>
+						Please open it and click the button inside to confirm
+						your subscription.
+					</p>
+				</div>
+			</div>
+			<button
+				type="submit"
+				class="cancel">
+				Dismiss message
+			</button>
+		</aside>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>
